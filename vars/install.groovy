@@ -8,7 +8,7 @@ def call()  {
             steps {
                 script {
                   sh 'whoami'
-                  sh 'sudo apt update'
+                  sh 'sudo apt update -y'
                   sh 'sudo apt install -y nginx'
                   echo 'installed nginx'
                 }
