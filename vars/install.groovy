@@ -1,9 +1,5 @@
 def call()  {
   pipeline {
-    agent { 
-        label 'worker1' 
-    }
-    
     stages {
         stage('Install Nginx') {
             steps {
