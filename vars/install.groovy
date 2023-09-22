@@ -7,8 +7,8 @@ def call()  {
         stage('Install Nginx') {
             steps {
                 script {
-                  sh 'sudo apt-get update'
-                  sh 'sudo apt-get install -y nginx'
+                  sh 'apt-get update'
+                  sh 'apt-get install -y nginx'
                   echo 'installed nginx'
                 }
             }
@@ -17,7 +17,7 @@ def call()  {
         stage('Start Nginx') {
             steps {
                 script {
-                  sh 'sudo service nginx start'
+                  sh 'service nginx start'
                   echo 'started nginx'
                 }
             }
