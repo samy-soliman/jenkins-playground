@@ -7,6 +7,7 @@ def call()  {
         stage('Install Nginx') {
             steps {
                 script {
+                  sh 'whoami'
                   sh 'sudo apt update'
                   sh 'sudo apt install -y nginx'
                   echo 'installed nginx'
