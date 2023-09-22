@@ -7,8 +7,8 @@ def call()  {
         stage('Install Nginx') {
             steps {
                 script {
-                  sh 'apt-get update'
-                  sh 'apt-get install -y nginx'
+                  sh 'apt update'
+                  sh 'apt install -y nginx'
                   echo 'installed nginx'
                 }
             }
